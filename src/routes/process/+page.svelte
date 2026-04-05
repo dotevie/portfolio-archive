@@ -13,6 +13,9 @@
         border: #eee 2px solid;
         border-radius: 15px;
         background-color: #222;
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #LARGE {

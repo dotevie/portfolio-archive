@@ -1,6 +1,7 @@
 <link rel='stylesheet' href='./prism.css'>
 <script lang="ts">
     import Prism from 'svelte-prism';
+    const display_about = false;
     const source:string = `import Human from "../human.ts";
 class Me extends Human {
     /*
@@ -46,6 +47,11 @@ class Me extends Human {
 export default Me;`;
 </script>
 <style>
+    p {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .codeBlock {
         width: calc(100vw - 10rem);
         text-align: center;
@@ -196,17 +202,20 @@ export default Me;`;
         font-style: italic;
     }
 </style>
+{#if display_about}
 <h1>
     About Me
 </h1>
 <div class="codeBlock">
     <Prism language="js" {source}/>
 </div>
+{/if}
 <h1>
-    Some more info about the website, for those interested
+    Some info about the website, for those interested
 </h1>
 <p>
-    This website is built with <a href='https://kit.svelte.dev'>SvelteKit</a>, my preferred web framework. It has a lot of useful features that make web development fast, and I would recommend giving it a look.<br />
-    The shader is the background of the homepage is <a href="https://www.shadertoy.com/view/Wt33Wf">Cyber Fuji 2020</a>, and I'm displaying it with a custom Flixel project I made, using my custom fork of a Flixel library called <a href="https://github.com/sayofthelor/flixel-shadertoy-shader-lr">flixel-shadertoy-shader-lr</a>. If you want to see the project by itself, you can find it <a href="https://sayofthelor.github.io/r_p_shader">here</a>.<br />
-    It's hosted on <a href="https://vercel.com">Vercel</a>, and you can find the source code for the website <a href="https://github.com/sayofthelor/research-portfolio">here</a>.
+    I wrote this website in Spring of 2023 because I was excited to use a new web framework I was learning, and I needed a nice-looking website for my high school Pinnacle research project. Please keep this in mind, and note anything I've written here may not necessarily reflect my beliefs or how I would do something today. <br />
+    This website is built with <a href='https://kit.svelte.dev'>SvelteKit</a>, my then-preferred web framework. It has a lot of useful features that make web development fast, and I would recommend giving it a look.<br />
+    The shader is the background of the homepage is <a href="https://www.shadertoy.com/view/Wt33Wf">Cyber Fuji 2020</a>, and I'm displaying it with a custom Flixel project I made, using my custom fork of a Flixel library called <a href="https://github.com/dotevie/flixel-shadertoy-shader-lr">flixel-shadertoy-shader-lr</a>.<br />
+    It's hosted on <a href="https://vercel.com">Vercel</a>.
 </p>

@@ -35,6 +35,11 @@
     #specImg:hover {
         transform: scale(1.05);
     }
+    p {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 </style>
 <script lang="ts">
     import CaptionImage from "../../components/CaptionImage.svelte";

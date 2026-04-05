@@ -71,5 +71,5 @@
 
 
 <ul>
-    <li><div class="text">sailor priddy pinnacle project portfolio • made with <div id="heart"><FontAwesome icon={faHeart} /></div> and </div><e on:click={() => window.open("http://kit.svelte.dev", "_blank")} on:keyup={() => null}>sveltekit</e></li>
+    <li><div class="text">Evelyn Priddy Spring 2023 Pinnacle Project Portfolio • made with <div id="heart"><FontAwesome icon={faHeart} /></div> and </div><e on:click={() => window.open("http://kit.svelte.dev", "_blank")} on:keyup={() => null}>sveltekit</e></li>
 </ul>
